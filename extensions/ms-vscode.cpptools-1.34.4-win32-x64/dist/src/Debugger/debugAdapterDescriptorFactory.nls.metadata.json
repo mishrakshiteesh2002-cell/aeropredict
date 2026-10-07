@@ -1,0 +1,22 @@
+{
+	"messages": [
+		"Debugger type '{0}' is not available for non-Windows machines.",
+		"Run Without Debugging is only supported for launch configurations.",
+		"Launch configurations with the following properties cannot be run directly in the terminal: {0}",
+		"Program output will appear in the Debug Console instead.",
+		"To suppress this warning, set the 'ignoreRunWithoutDebuggingWarnings' property to true in your launch configuration."
+	],
+	"keys": [
+		"debugger.not.available",
+		"debugger.noDebug.requestType.not.supported",
+		"debugger.unsupported.properties",
+		"debugger.fallback.message",
+		{
+			"key": "debugger.fallback.message2",
+			"comment": [
+				"{Locked=\\\"ignoreRunWithoutDebuggingWarnings\\\"} {Locked=\\\"true\\\"}"
+			]
+		}
+	],
+	"filePath": "Debugger\\debugAdapterDescriptorFactory"
+}

@@ -1,0 +1,133 @@
+{
+	"type": "array",
+	"description": "Sady CMake",
+	"items": {
+		"type": "object",
+		"description": "Sada",
+		"additionalProperties": false,
+		"properties": {
+			"name": {
+				"type": "string",
+				"description": "Název této sady"
+			},
+			"description": {
+				"type": "string",
+				"description": "Popis této sady"
+			},
+			"vendor": {
+				"type": "string",
+				"description": "Název dodavatele této sady"
+			},
+			"triple": {
+				"type": "string",
+				"description": "Cílová trojice této sady"
+			},
+			"version": {
+				"type": "string",
+				"description": "Verze této sady"
+			},
+			"versionRuntime": {
+				"type": "string",
+				"description": "Verze modulu runtime jazyka C pro sadu"
+			},
+			"keep": {
+				"type": "boolean",
+				"description": "Pokud je nastavena hodnota `true`, bude tato sada zachována i v případě, kdy už bude neaktuální."
+			},
+			"compilers": {
+				"type": "object",
+				"patternProperties": {
+					"\\w+": {
+						"type": "string",
+						"description": "Cesta ke kompilátoru pro tento jazyk"
+					}
+				}
+			},
+			"toolchainFile": {
+				"type": "string",
+				"description": "Cesta k souboru sady nástrojů"
+			},
+			"visualStudio": {
+				"type": "string",
+				"description": "ID instance produktu Visual Studio"
+			},
+			"visualStudioArchitecture": {
+				"type": "string",
+				"description": "Cílená architektura"
+			},
+			"visualStudioArguments": {
+				"type": "array",
+				"description": "Argumenty pro vcvarsall.bat",
+				"items": {
+					"type": "string"
+				}
+			},
+			"environmentSetupScript": {
+				"type": "string",
+				"description": "Absolutní cesta ke skriptu, který upravuje prostředí pro sadu"
+			},
+			"environmentVariables": {
+				"type": "object",
+				"patternProperties": {
+					".*": {
+						"type": "string",
+						"description": "Hodnota pro proměnnou prostředí"
+					}
+				}
+			},
+			"cmakeSettings": {
+				"type": "object",
+				"patternProperties": {
+					".*": {
+						"oneOf": [
+							{
+								"type": "string",
+								"description": "Hodnota pro nastavení CMake. Středníky se předávají beze změny a CMake je zpracovává jako oddělovače seznamu."
+							},
+							{
+								"type": "boolean",
+								"description": "Logická hodnota pro nastavení CMake. Vygeneruje se jako -D<key>:BOOL=TRUE/FALSE."
+							},
+							{
+								"type": "number",
+								"description": "Číselná hodnota pro nastavení CMake. Vygeneruje se jako -D<key>:STRING=<number>. Poznámka: Čísla JSON nemohou zachovat koncové nuly (1.10 ≡ 1.1) ani velmi velké či malé hodnoty; pokud záleží na přesném textovém zápisu, uzavřete hodnotu do uvozovek jako řetězec."
+							},
+							{
+								"type": "array",
+								"items": {
+									"type": "string"
+								},
+								"description": "Pole řetězců spojených středníky, které tvoří seznam CMake."
+							}
+						]
+					}
+				}
+			},
+			"preferredGenerator": {
+				"type": "object",
+				"description": "Nastavit preferovaný generátor CMake pro tuto sadu",
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "Název generátoru, který se má použít"
+					},
+					"platform": {
+						"type": "string",
+						"description": "Platforma CMake pro argument -A"
+					},
+					"toolset": {
+						"type": "string",
+						"description": "Sada nástrojů CMake pro argument -T"
+					}
+				},
+				"required": [
+					"name"
+				]
+			},
+			"isTrusted": {
+				"type": "boolean",
+				"description": "Pravda, pokud tato sada pochází z důvěryhodné cesty"
+			}
+		}
+	}
+}

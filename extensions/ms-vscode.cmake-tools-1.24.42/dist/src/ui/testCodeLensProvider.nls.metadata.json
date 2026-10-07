@@ -1,0 +1,11 @@
+{
+	"messages": [
+		"$(run) Run",
+		"$(debug) Debug"
+	],
+	"keys": [
+		"test.codelens.run",
+		"test.codelens.debug"
+	],
+	"filePath": "src\\ui\\testCodeLensProvider"
+}

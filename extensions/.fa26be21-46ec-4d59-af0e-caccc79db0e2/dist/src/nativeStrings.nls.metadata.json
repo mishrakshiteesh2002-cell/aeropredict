@@ -1,0 +1,1913 @@
+{
+	"messages": [
+		"Searching include path...",
+		"Include file not found in browse.path.",
+		"Edit \"browse.path\" setting",
+		"Add to \"includePath\": {0}",
+		"Add to \"includePath\": {0}",
+		"Add '{0}'",
+		"Add '{0}'",
+		"Edit \"includePath\" setting",
+		"Disable error squiggles",
+		"Enable all error squiggles",
+		"#include errors detected. Please update your includePath. Syntax errors for this file will not be reported until included files are found.",
+		"#include errors detected. Please update your includePath. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"#include errors detected. Please update your includePath. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"#include errors detected. Consider updating your compile_commands.json or includePath. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"#include errors detected. Consider updating your compile_commands.json or includePath. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"\"{0}\" could not be parsed. 'includePath' from c_cpp_properties.json in folder '{1}' will be used instead.",
+		"\"{0}\" could not be parsed. 'includePath' from c_cpp_properties.json in folder '{1}' will be used instead.",
+		"\"{0}\" could not be found. 'includePath' from c_cpp_properties.json in folder '{1}' will be used instead.",
+		"\"{0}\" could not be found. 'includePath' from c_cpp_properties.json in folder '{1}' will be used instead.",
+		"\"{0}\" not found in \"{1}\". 'includePath' from c_cpp_properties.json in folder '{2}' will be used for this file instead.",
+		"\"{0}\" not found in \"{1}\". 'includePath' from c_cpp_properties.json in folder '{2}' will be used for this file instead.",
+		"The IntelliSense database was successfully reset.",
+		"Failed to send response to client: {0}",
+		"Failed to send response to client: {0}",
+		"Failed to read response from server: {0}",
+		"Failed to read response from server: {0}",
+		"Failed to send request to server: {0}",
+		"Failed to send request to server: {0}",
+		"Unexpected error while waiting for requests: {0}",
+		"Unexpected error while waiting for requests: {0}",
+		"{0} errored with: {1}",
+		"{0} errored with: {1}",
+		"Failed to open the file {0}",
+		"Failed to open the file {0}",
+		"Failed to query default include paths and defines for {0}.",
+		"Failed to query default include paths and defines for {0}.",
+		"Failed calling {0}",
+		"Failed calling {0}",
+		"Quick info operation failed: {0}",
+		"Quick info operation failed: {0}",
+		"Failed to create IntelliSense client: {0}",
+		"Failed to create IntelliSense client: {0}",
+		"Failed to spawn IntelliSense process: {0}",
+		"Failed to spawn IntelliSense process: {0}",
+		"Error calling browse_engine_update_thread.join(): {0}",
+		"Error calling browse_engine_update_thread.join(): {0}",
+		"This file ({0}) is already opened in the editor but with a different casing. IntelliSense features will be disabled on this copy of the file.",
+		"This file ({0}) is already opened in the editor but with a different casing. IntelliSense features will be disabled on this copy of the file.",
+		"IntelliSense client has disconnected from the server - {0}",
+		"IntelliSense client has disconnected from the server - {0}",
+		"Formatting failed:",
+		"Unable to add file to database, error = {0}: {1}",
+		"Unable to add file to database, error = {0}: {1}",
+		"Failed to reset timestamp during abort, error = {0}: {1}",
+		"Failed to reset timestamp during abort, error = {0}: {1}",
+		"Unable to update timestamp, error = {0}: {1}",
+		"Unable to update timestamp, error = {0}: {1}",
+		"Unable to finalize updates for file, error = {0}: {1}",
+		"Unable to finalize updates for file, error = {0}: {1}",
+		"{0} is not a directory (st_mode={1})",
+		"{0} is not a directory (st_mode={1})",
+		"Unable to retrieve file system information for {0}. error = {1}",
+		"Unable to retrieve file system information for {0}. error = {1}",
+		"{0} is not a directory",
+		"{0} is not a directory",
+		"File discovery was aborted",
+		"Aborting tag parse of {0} and dependencies",
+		"Aborting tag parse of {0} and dependencies",
+		"Aborting tag parse at root",
+		"Unable to retrieve DB records to reset timestamps: error = {0}",
+		"Unable to retrieve DB records to reset timestamps: error = {0}",
+		"Failed to reset timestamp for {0}: error = {1}",
+		"Failed to reset timestamp for {0}: error = {1}",
+		"No suitable compiler found. Please set the \"compilerPath\" in c_cpp_properties.json.",
+		"Compiler include path not found: {0}",
+		"Compiler include path not found: {0}",
+		"IntelliSense engine is not responding. Using the Tag Parser instead.",
+		"Tag Parser will be used for IntelliSense operations in: {0}",
+		"Tag Parser will be used for IntelliSense operations in: {0}",
+		"Error squiggles will be disabled in: {0}",
+		"Error squiggles will be disabled in: {0}",
+		"Processing folder (non-recursive): {0}",
+		"Processing folder (non-recursive): {0}",
+		"Processing folder (recursive): {0}",
+		"Processing folder (recursive): {0}",
+		"File exclude: {0}",
+		"File exclude: {0}",
+		"Search exclude: {0}",
+		"Search exclude: {0}",
+		"Discovering files: {0} file(s) processed",
+		"Discovering files: {0} file(s) processed",
+		"{0} file(s) removed from database",
+		"{0} file(s) removed from database",
+		"Parsing: {0} files(s) processed",
+		"Parsing: {0} files(s) processed",
+		"Shutting down IntelliSense server: {0}",
+		"Shutting down IntelliSense server: {0}",
+		"Resetting IntelliSense server: {0}",
+		"Resetting IntelliSense server: {0}",
+		"Code browsing service initialized",
+		"Folder: {0} will be indexed",
+		"Folder: {0} will be indexed",
+		"Populate include completion cache.",
+		"Discovering files...",
+		"Done discovering files.",
+		"Parsing open files...",
+		"Done parsing open files.",
+		"Parsing remaining files...",
+		"Done parsing remaining files.",
+		"Using configuration: \"{0}\"",
+		"Using configuration: \"{0}\"",
+		"{0} include path suggestion(s) discovered.",
+		"{0} include path suggestion(s) discovered.",
+		"Checking for syntax errors: {0}",
+		"Checking for syntax errors: {0}",
+		"IntelliSense Engine = {0}.",
+		"IntelliSense Engine = {0}.",
+		"The extension will use the Tag Parser for IntelliSense when #includes don't resolve.",
+		"Autocomplete is enabled.",
+		"Autocomplete is disabled.",
+		"Hover is enabled.",
+		"Hover is disabled.",
+		"Enhanced Colorization is enabled.",
+		"Error squiggles are disabled.",
+		"Error squiggles are enabled.",
+		"Error squiggles are enabled if all header dependencies are resolved.",
+		"Replaced placeholder file record",
+		"tag parsing file: {0}",
+		"tag parsing file: {0}",
+		"tag parsing error (this can be ignored unless symbols can't be found):",
+		"Reset time stamp for {0}",
+		"Reset time stamp for {0}",
+		"Failed to remove file: {0}",
+		"Failed to remove file: {0}",
+		"Regex parse error - vscode pattern: {0}, regex: {1}, error message: {2}",
+		"Regex parse error - vscode pattern: {0}, regex: {1}, error message: {2}",
+		"terminating child process: {0}",
+		"terminating child process: {0}",
+		"still alive, killing...",
+		"giving up",
+		"not exited yet. Will sleep for {0} milliseconds and try again.",
+		"not exited yet. Will sleep for {0} milliseconds and try again.",
+		"Failed to spawn process. Error: {0} ({1})",
+		"Failed to spawn process. Error: {0} ({1})",
+		"Offering completion",
+		"Attempting to get defaults from compiler found on the machine: '{0}'",
+		"Attempting to get defaults from compiler found on the machine: '{0}'",
+		"Unable to resolve include path: {0}",
+		"Unable to resolve include path: {0}",
+		"Error searching for IntelliSense client: {0}",
+		"Error searching for IntelliSense client: {0}",
+		"IntelliSense client not available, using Tag Parser for quick info.",
+		"using Tag Parser for quick info",
+		"Closing the communication channel.",
+		"sending compilation args for {0}",
+		"sending compilation args for {0}",
+		"include: {0}",
+		"include: {0}",
+		"framework: {0}",
+		"framework: {0}",
+		"define: {0}",
+		"define: {0}",
+		"preinclude: {0}",
+		"preinclude: {0}",
+		"other: {0}",
+		"other: {0}",
+		"sending {0} changes to server",
+		"sending {0} changes to server",
+		"Invalid opened file instance. Ignoring IntelliSense message for file {0}.",
+		"Invalid opened file instance. Ignoring IntelliSense message for file {0}.",
+		"idle loop: reparsing the active document",
+		"IntelliSense client is currently disconnected",
+		"Request canceled: {0}",
+		"Request canceled: {0}",
+		"IntelliSense client not available, using Tag Parser for go to definition.",
+		"Error squiggle count: {0}",
+		"Error squiggle count: {0}",
+		"Queueing IntelliSense update for files in translation unit of: {0}",
+		"Queueing IntelliSense update for files in translation unit of: {0}",
+		"Formatting document: {0}",
+		"Formatting document: {0}",
+		"Formatting input:",
+		"Formatting raw output:",
+		"Formatting diffed output before cursor:",
+		"Formatting diffed output after cursor:",
+		"Formatting diffed output:",
+		"Disable inactive region colorization",
+		"Error limit exceeded, {0} error(s) not reported.",
+		"Error limit exceeded, {0} error(s) not reported.",
+		"#include errors detected. Consider updating your compile_commands.json or includePath. Syntax errors for this file will not be reported until included files are found.",
+		"The IntelliSense database could not be reset. To manually reset, close all VS Code instances and then delete this file: {0}",
+		"The IntelliSense database could not be reset. To manually reset, close all VS Code instances and then delete this file: {0}",
+		"Formatting failed. See the output window for details.",
+		"Populating include completion cache.",
+		"Discovering files: {0}",
+		"Discovering files: {0}",
+		"Parsing open files",
+		"Tag parser initializing",
+		"Workspace parsing paused",
+		"Parsing workspace files: {0}",
+		"Parsing workspace files: {0}",
+		"Discovering files: {0} / {1} ({2}%)",
+		"Discovering files: {0} / {1} ({2}%)",
+		"Parsing workspace files: {0} / {1} ({2}%)",
+		"Parsing workspace files: {0} / {1} ({2}%)",
+		"Can't find or run process_name",
+		"Child exec failed {0}",
+		"Child exec failed {0}",
+		"Could not communicate with child process!",
+		"{0} failed",
+		"{0} failed",
+		"Failed to set {0} flag",
+		"Failed to set {0} flag",
+		"Unable to create {0}!",
+		"Unable to create {0}!",
+		"Failed to set stdin {0} flag",
+		"Failed to set stdin {0} flag",
+		"Failed to set stdout {0} flag",
+		"Failed to set stdout {0} flag",
+		"Failed to set stderr {0} flag",
+		"Failed to set stderr {0} flag",
+		"Unable to start child process!",
+		"Timed out attempting to communicate with process!",
+		"Process has failed to run",
+		"Specified compiler was not found: {0}",
+		"Specified compiler was not found: {0}",
+		"Config data invalid, {0}",
+		"Config data invalid, {0}",
+		"CMake executable not found at {0}",
+		"CMake executable not found at {0}",
+		"No args provider",
+		"Invalid file path {0}",
+		"Invalid file path {0}",
+		"Can't create IntelliSense client for {0}",
+		"Can't create IntelliSense client for {0}",
+		"declaration",
+		"type alias",
+		"Compiler does not support 64-bit. Falling back to 32-bit intelliSenseMode.",
+		"Compiler does not support 32-bit. Falling back to 64-bit intelliSenseMode.",
+		"Failed to query compiler. Falling back to 32-bit intelliSenseMode.",
+		"Failed to query compiler. Falling back to 64-bit intelliSenseMode.",
+		"Failed to query compiler. Falling back to no bitness.",
+		"IntelliSense client creation aborted: {0}",
+		"IntelliSense client creation aborted: {0}",
+		"#include errors detected based on information provided by the configurationProvider setting. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"#include errors detected based on information provided by the configurationProvider setting. IntelliSense features for this translation unit ({0}) will be provided by the Tag Parser.",
+		"#include errors detected based on information provided by the configurationProvider setting. Syntax errors for this file will not be reported until included files are found.",
+		"preprocessor keyword",
+		"C keyword",
+		"C++ keyword",
+		"+1 overload",
+		"+%d overloads",
+		"+1 specialization",
+		"+%d specializations",
+		"Note: IntelliSense is not fully configured. Use the 'Select IntelliSense Configuration...' command to finish configuration.",
+		"Select an IntelliSense configuration to locate system headers",
+		"Expands to:",
+		"Attention:",
+		"Author:",
+		"Authors:",
+		"Bug:",
+		"Copyright:",
+		"Deprecated:",
+		"Date:",
+		"Details:",
+		"Exceptions:",
+		"Invariant:",
+		"File:",
+		"Note:",
+		"Parameters:",
+		"Precondition:",
+		"Postcondition:",
+		"Remark:",
+		"Remarks:",
+		"Result:",
+		"Return:",
+		"Returns:",
+		"See also:",
+		"Since:",
+		"Template Parameters:",
+		"Test:",
+		"TODO:",
+		"Version:",
+		"Warning:",
+		"Compiler query command line: {0}",
+		"Compiler query command line: {0}",
+		"Attempting to get defaults from C compiler in \"compilerPath\" property: '{0}'",
+		"Attempting to get defaults from C compiler in \"compilerPath\" property: '{0}'",
+		"Attempting to get defaults from C++ compiler in \"compilerPath\" property: '{0}'",
+		"Attempting to get defaults from C++ compiler in \"compilerPath\" property: '{0}'",
+		"Attempting to get defaults from C compiler in compile_commands.json file: '{0}'",
+		"Attempting to get defaults from C compiler in compile_commands.json file: '{0}'",
+		"Attempting to get defaults from C++ compiler in compile_commands.json file: '{0}'",
+		"Attempting to get defaults from C++ compiler in compile_commands.json file: '{0}'",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\".",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\".",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\".",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\".",
+		"For C source files, the cStandard was changed from \"{0}\" to \"{1}\".",
+		"For C source files, the cStandard was changed from \"{0}\" to \"{1}\".",
+		"For C++ source files, the cppStandard was changed from \"{0}\" to \"{1}\".",
+		"For C++ source files, the cppStandard was changed from \"{0}\" to \"{1}\".",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cStandard was changed from \"{2}\" to \"{3}\".",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cStandard was changed from \"{2}\" to \"{3}\".",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cppStandard changed from \"{2}\" to \"{3}\".",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cppStandard changed from \"{2}\" to \"{3}\".",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C source files, the cStandard was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C source files, the cStandard was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C++ source files, the cppStandard was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C++ source files, the cppStandard was changed from \"{0}\" to \"{1}\" based on compiler args and querying compilerPath: \"{2}\"",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cStandard was changed from \"{2}\" to \"{3}\" based on compiler args and querying compilerPath: \"{4}\"",
+		"For C source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cStandard was changed from \"{2}\" to \"{3}\" based on compiler args and querying compilerPath: \"{4}\"",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cppStandard changed from \"{2}\" to \"{3}\" based on compiler args and querying compilerPath: \"{4}\"",
+		"For C++ source files, IntelliSenseMode was changed from \"{0}\" to \"{1}\" and cppStandard changed from \"{2}\" to \"{3}\" based on compiler args and querying compilerPath: \"{4}\"",
+		"Unable to resolve configuration with compilerPath \"{0}\".  Using \"{1}\" instead.",
+		"Unable to resolve configuration with compilerPath \"{0}\".  Using \"{1}\" instead.",
+		"Unable to resolve configuration with compilerPath: \"{0}\"",
+		"Unable to resolve configuration with compilerPath: \"{0}\"",
+		"Skipping query of compiler due to explicitly empty compilerPath",
+		"MSVC intelliSenseMode specified.  Configuring for compiler cl.exe.",
+		"Unable to configure for compiler cl.exe.",
+		"Querying compiler's default target using command line: \"{0}\" {1}",
+		"Querying compiler's default target using command line: \"{0}\" {1}",
+		"Compiler returned default target value: {0}",
+		"Compiler returned default target value: {0}",
+		"Querying compiler for default C language standard using command line: {0}",
+		"Querying compiler for default C language standard using command line: {0}",
+		"Querying compiler for default C++ language standard using command line: {0}",
+		"Querying compiler for default C++ language standard using command line: {0}",
+		"Detected language standard version: {0}",
+		"Detected language standard version: {0}",
+		"Unhandled default compiler target value detected: {0}",
+		"Unhandled default compiler target value detected: {0}",
+		"Unhandled target argument value detected: {0}",
+		"Unhandled target argument value detected: {0}",
+		"Shutting down IntelliSense server: {0}. Memory usage is {1} MB and has exceeded the {2} MB limit.",
+		"Shutting down IntelliSense server: {0}. Memory usage is {1} MB and has exceeded the {2} MB limit.",
+		"Failed to query compiler at path \"{0}\" for default standard versions.  Compiler querying is disabled for this compiler.",
+		"Failed to query compiler at path \"{0}\" for default standard versions.  Compiler querying is disabled for this compiler.",
+		"Compiler query returned an unrecognized language standard version.  The latest supported version will be used instead.",
+		"IntelliSense process crash detected.",
+		"IntelliSense process crash detected: {0}",
+		"IntelliSense process crash detected: {0}",
+		"Return values:",
+		"Unable to locate nvcc compiler: {0}",
+		"Unable to locate nvcc compiler: {0}",
+		"Unable to locate nvcc host compiler: {0}",
+		"Unable to locate nvcc host compiler: {0}",
+		"Invoking nvcc with command line: {0}",
+		"Invoking nvcc with command line: {0}",
+		"Unable to find host compile command in output of nvcc.",
+		"Unable to locate forced include: {0}",
+		"Unable to locate forced include: {0}",
+		"Inline macro",
+		"Unable to access browse database. ({0})",
+		"Unable to access browse database. ({0})",
+		"IntelliSenseMode was changed because it didn't match the detected compiler.  Consider setting \"compilerPath\" instead.  Set \"compilerPath\" to \"\" to disable detection of system includes and defines.",
+		"Remove all code analysis problems",
+		"(Multiple locations)",
+		"Folder",
+		"File",
+		"Compiler returned default language standard version: {0}. Since this version is old, will try to use newer version {1} as default.",
+		"Compiler returned default language standard version: {0}. Since this version is old, will try to use newer version {1} as default.",
+		"Unexpected output from clang-tidy: {0}. Expected: {1}.",
+		"Unexpected output from clang-tidy: {0}. Expected: {1}.",
+		"Generate Doxygen comment",
+		"Create declaration of '{0}' in {1}",
+		"Create declaration of '{0}' in {1}",
+		"Create definition of '{0}' in {1}",
+		"Create definition of '{0}' in {1}",
+		"Function definition for '{0}' not found.",
+		"Function definition for '{0}' not found.",
+		"Attributes",
+		"Bases",
+		"Classes",
+		"CoClasses",
+		"Delegates",
+		"Enums",
+		"Events",
+		"Functions",
+		"Import directives",
+		"ImportLib statements",
+		"Import statements",
+		"Include directives",
+		"Interfaces",
+		"Libraries",
+		"Macros",
+		"Maps",
+		"Map entries",
+		"Miscellaneous",
+		"Namespaces",
+		"Parameters",
+		"Properties",
+		"Structs",
+		"TODO: insert return statement here",
+		"Typedefs",
+		"Unions",
+		"Using aliases",
+		"Using directives",
+		"Variables",
+		"Automatic add function",
+		"vsCMFunctionVirtual is redundant and must not be specified when with vsCMFunctionComMethod.",
+		"vsCMFunctionComMethod cannot be static.",
+		"Invalid C/C++ file: '%s'.",
+		"File name too long: '%s'.",
+		"Cannot create file '%s'.",
+		"Cannot access directory or file '%s' for writing.",
+		"Invalid file path: '%s'.",
+		"File '%s' was not found.",
+		"Create Declaration / Definition failed: %s",
+		"Unable to create function '%s'. Creating defaulted or deleted functions is not supported.",
+		"Unable to create function '%s'.",
+		"Unable to find an unambiguous location for function '%s'.",
+		"File '%s' was not found.",
+		"Could not find class or namespace '%s'.",
+		"The operation is not supported for '%s'.",
+		"Unknown error.",
+		"Please run the 'Select IntelliSense Configuration...' command to locate your system headers.",
+		"Copy declaration of '{0}'",
+		"Copy declaration of '{0}'",
+		"Copy definition of '{0}'",
+		"Copy definition of '{0}'",
+		"Copying Declaration / Definition to clipboard failed: %s",
+		"Extract to function",
+		"Extract to free function",
+		"Extract to member function in '{0}'",
+		"Extract to member function in '{0}'",
+		"The selected text is not inside a function.",
+		"The selected text cannot span different functions.",
+		"Variable '%s' is declared in the selected region and then used below it.",
+		"Preprocessor macro '%s' is used below the selected region.",
+		"The selected region spans an inactive preprocessor block.",
+		"The selected region does not contain any code that can be extracted.",
+		"The selected region is not entirely within the function's body.",
+		"The selection contains IntelliSense errors.",
+		"'%s' is not declared within the selected code, but is being modified. C code cannot pass arguments by reference.",
+		"The function would have to return a value by reference. C code cannot return references.",
+		"Jumps between the selected code and the surrounding code are present.",
+		"In the selected code, some control paths exit without setting the return value. This is supported only for scalar, numeric, and pointer return types.",
+		"Expand selection (to enable 'Extract to function')",
+		"\"{0}\" not found in compile_commands.json files. 'includePath' from c_cpp_properties.json in folder '{1}' will be used for this file instead.",
+		"\"{0}\" not found in compile_commands.json files. 'includePath' from c_cpp_properties.json in folder '{1}' will be used for this file instead.",
+		"Generate Copilot summary",
+		"Unable to index files from non-existent folder: {0}",
+		"Unable to index files from non-existent folder: {0}",
+		"The C/C++ extension may be used only with Microsoft Visual Studio, Visual Studio for Mac, Visual Studio Code, Azure DevOps, Team Foundation Server, and successor Microsoft products and services to develop and test your applications.",
+		"Microsoft C++ Language Server",
+		"Usage: {0} [options]",
+		"Usage: {0} [options]",
+		"Options:",
+		"Show this help message and exit.",
+		"Show version information and exit.",
+		"Permanently accept the End User License Agreement (EULA).",
+		"Do not redirect stderr to /dev/null (useful for debugging).",
+		"Initiate interactive login (GitHub Copilot subscription required).",
+		"Force the login process, even if already authenticated.",
+		"Allow storing credentials in plaintext if a secure keychain is unavailable.",
+		"Specify the directory for log files (default: system temp directory).",
+		"Set the logging verbosity from 0 (Errors only) to 9 (Verbose).",
+		"Specify the parameter as an absolute path, or relative to the workspace root or its .github folder.",
+		"Disable sending telemetry data.",
+		"To authenticate with GitHub, please copy the code {0} and then visit {1}. Waiting for authorization...",
+		"To authenticate with GitHub, please copy the code {0} and then visit {1}. Waiting for authorization...",
+		"Timed out waiting for authorization.",
+		"Successfully authenticated with GitHub.",
+		"GitHub authentication succeeded but tokens could not be saved.",
+		"Keyring error: {0}",
+		"Keyring error: {0}",
+		"The keyring collection is locked. Unlock it or restart gnome-keyring-daemon.",
+		"No keyring service is available. Install and start gnome-keyring: sudo apt install gnome-keyring",
+		"Or allow plaintext storage by passing --login --allow-plaintext-secret-storage.",
+		"The device code has expired. Please try again.",
+		"Authorization was denied by the user.",
+		"Unexpected error during polling: {0}",
+		"Unexpected error during polling: {0}",
+		"GitHub login failed. Try running with --login from the command line to log in.",
+		"GitHub login failed. Run npx @microsoft/cpp-language-server --login",
+		"EULA must be accepted to proceed. Run with --accept-eula.",
+		"EULA must be accepted to proceed. Run npx @microsoft/cpp-language-server --accept-eula",
+		"Already authenticated with GitHub. Use --force-login to re-authenticate.",
+		"Initialization failed: Unsupported config version. Only version 1 is supported.",
+		"Initialization failed: Config file '{0}' not found.",
+		"Initialization failed: Config file '{0}' not found.",
+		"Initialization failed: Unable to parse config file '{0}'. Verify the JSON format. Error: {1}",
+		"Initialization failed: Unable to parse config file '{0}'. Verify the JSON format. Error: {1}",
+		"Initialization failed: 'repositoryPath' is not configured or invalid.",
+		"Initialization failed: 'compileCommands' or 'cppProperties' must be configured.",
+		"Initialization failed: 'compileCommands' and 'cppProperties' cannot both be configured.",
+		"Initialization failed: 'compileCommands' path not found: '{0}'.",
+		"Initialization failed: 'compileCommands' path not found: '{0}'.",
+		"Initialization failed: 'cppProperties' path not found: '{0}'.",
+		"Initialization failed: 'cppProperties' path not found: '{0}'.",
+		"Initialization failed: Unable to parse file specified by 'cppProperties': '{0}'. Verify the JSON format. Error: {1}",
+		"Initialization failed: Unable to parse file specified by 'cppProperties': '{0}'. Verify the JSON format. Error: {1}",
+		"Initialization failed: Unable to read configuration from 'cppProperties' file: '{0}'. Verify the schema.",
+		"Initialization failed: Unable to read configuration from 'cppProperties' file: '{0}'. Verify the schema.",
+		"Initialization failed: '{0}' does not contain a valid 'configurations' array.",
+		"Initialization failed: '{0}' does not contain a valid 'configurations' array.",
+		"Initialization failed: Configuration '{0}' was not found in 'cppProperties' file: '{1}'.",
+		"Initialization failed: Configuration '{0}' was not found in 'cppProperties' file: '{1}'.",
+		"Initialization failed: LSP config paths cache is missing.",
+		"libcurl not found ({0}). libcurl is required for authentication and telemetry.",
+		"libcurl not found ({0}). libcurl is required for authentication and telemetry.",
+		"libcurl should be available on macOS by default. If missing, install via: brew install curl",
+		"Install libcurl: sudo apt install libcurl4 (Debian/Ubuntu) or sudo dnf install libcurl (Fedora/RHEL).",
+		"libcurl loaded but required symbols are missing. This may indicate a very old or incompatible libcurl version. The language server cannot operate without a compatible libcurl.",
+		"libsecret-1.so.0 not found ({0}). libsecret is required for secure credential storage. Install libsecret: sudo apt install libsecret-1-0 (Debian/Ubuntu) or sudo dnf install libsecret (Fedora/RHEL).",
+		"libsecret-1.so.0 not found ({0}). libsecret is required for secure credential storage. Install libsecret: sudo apt install libsecret-1-0 (Debian/Ubuntu) or sudo dnf install libsecret (Fedora/RHEL).",
+		"libsecret loaded but required symbols are missing. The language server cannot operate without a compatible libsecret.",
+		"Failed to disable telemetry.",
+		"Method not found: {0}",
+		"Method not found: {0}",
+		"Unable to process IntelliSense for a file with the same canonicalized path as an existing file. URI: {0}, canonicalized path: {1}",
+		"Unable to process IntelliSense for a file with the same canonicalized path as an existing file. URI: {0}, canonicalized path: {1}",
+		"Initializing",
+		"Initializing ({0} of {1})",
+		"Initializing ({0} of {1})",
+		"Initializing ({0} of {1}): {2}",
+		"Initializing ({0} of {1}): {2}",
+		"Initializing {0}",
+		"Initializing {0}",
+		"Initializing projects",
+		"Initializing projects ({0} of {1})",
+		"Initializing projects ({0} of {1})",
+		"Initializing projects ({0} of {1}): {2}",
+		"Initializing projects ({0} of {1}): {2}",
+		"Initializing projects {0}",
+		"Initializing projects {0}",
+		"Checking for out of date files",
+		"Checking for out of date files ({0} of {1})",
+		"Checking for out of date files ({0} of {1})",
+		"Checking for out of date files ({0} of {1}): {2}",
+		"Checking for out of date files ({0} of {1}): {2}",
+		"Checking for out of date files {0}",
+		"Checking for out of date files {0}",
+		"Parsing files",
+		"Parsing files ({0} of {1})",
+		"Parsing files ({0} of {1})",
+		"Parsing files ({0} of {1}): {2}",
+		"Parsing files ({0} of {1}): {2}",
+		"Parsing files {0}",
+		"Parsing files {0}",
+		"Parsing included files",
+		"Parsing included files ({0} of {1})",
+		"Parsing included files ({0} of {1})",
+		"Parsing included files ({0} of {1}): {2}",
+		"Parsing included files ({0} of {1}): {2}",
+		"Parsing included files {0}",
+		"Parsing included files {0}",
+		"Scanning #includes for more files",
+		"Scanning #includes for more files ({0} of {1})",
+		"Scanning #includes for more files ({0} of {1})",
+		"Scanning #includes for more files ({0} of {1}): {2}",
+		"Scanning #includes for more files ({0} of {1}): {2}",
+		"Scanning #includes for more files {0} {1}",
+		"Scanning #includes for more files {0} {1}",
+		"Ready (Updating external dependencies)",
+		"Ready (Updating external dependencies) ({0} of {1})",
+		"Ready (Updating external dependencies) ({0} of {1})",
+		"Ready (Updating external dependencies) ({0} of {1}): {2}",
+		"Ready (Updating external dependencies) ({0} of {1}): {2}",
+		"Ready (Updating external dependencies) {0}",
+		"Ready (Updating external dependencies) {0}",
+		"Ready (Optimizing database)",
+		"Ready (Optimizing database) ({0} of {1})",
+		"Ready (Optimizing database) ({0} of {1})",
+		"Ready (Optimizing database) ({0} of {1}): {2}",
+		"Ready (Optimizing database) ({0} of {1}): {2}",
+		"Ready (Optimizing database) {0}",
+		"Ready (Optimizing database) {0}",
+		"Creating Indexes",
+		"Creating Indexes ({0} of {1})",
+		"Creating Indexes ({0} of {1})",
+		"Creating Indexes ({0} of {1}): {2}",
+		"Creating Indexes ({0} of {1}): {2}",
+		"Creating Indexes {0}",
+		"Creating Indexes {0}",
+		"Evaluating",
+		"Evaluating ({0} of {1})",
+		"Evaluating ({0} of {1})",
+		"Evaluating ({0} of {1}): {2}",
+		"Evaluating ({0} of {1}): {2}",
+		"Evaluating {0}",
+		"Evaluating {0}",
+		"Indexing files",
+		"Indexing files ({0} of {1})",
+		"Indexing files ({0} of {1})",
+		"Indexing files ({0} of {1}): {2}",
+		"Indexing files ({0} of {1}): {2}",
+		"Indexing files {0}",
+		"Indexing files {0}",
+		"Allow the server to start even if the specified --lsp-config file does not exist.",
+		"Initialization failed during engine setup.",
+		"Important:",
+		"Validate a source file against compile_commands.json by fully parsing and analyzing it, reporting any diagnostics. Exits non-zero if errors are found.",
+		"Path to a specific compile_commands.json (or its directory) to use with --check. Defaults to auto-discovery.",
+		"not authorized; sign in is required to run --check",
+		"--check requires a source file: --check=<file>",
+		"source file not found: {0}",
+		"source file not found: {0}",
+		"compile_commands.json not found: {0}",
+		"compile_commands.json not found: {0}",
+		"could not find compile_commands.json in any parent directory of {0}; pass --check-compile-commands=<path> to specify it explicitly",
+		"could not find compile_commands.json in any parent directory of {0}; pass --check-compile-commands=<path> to specify it explicitly",
+		"failed to initialize the language engine",
+		"no workspace folder resolved for {0}",
+		"no workspace folder resolved for {0}",
+		"{0} is not present in {1}",
+		"{0} is not present in {1}",
+		"failed to read {0}",
+		"failed to read {0}",
+		"failed to open {0} for analysis",
+		"failed to open {0} for analysis",
+		"timed out waiting for analysis of {0} to finish",
+		"timed out waiting for analysis of {0} to finish",
+		"Failed to open browse database lock file: {0} (errno={1})",
+		"Failed to open browse database lock file: {0} (errno={1})",
+		"Failed to lock browse database lock file: {0} (errno={1})",
+		"Failed to lock browse database lock file: {0} (errno={1})"
+	],
+	"keys": [
+		"searching_include_path",
+		"include_not_found_in_browse_path",
+		"update_browse_path",
+		"add_to_include_path",
+		"add_to_include_path",
+		{
+			"key": "add_missing_include_path",
+			"comment": [
+				"{0} is C++ code to add, such as '#include <string>'"
+			]
+		},
+		{
+			"key": "add_missing_include_path",
+			"comment": [
+				"{0} is C++ code to add, such as '#include <string>'"
+			]
+		},
+		"edit_include_path",
+		"disable_error_squiggles",
+		"enable_error_squiggles",
+		{
+			"key": "include_errors_update_include_path_squiggles_disabled2",
+			"comment": [
+				"{Locked=\\\"#include\\\"} {Locked=\\\"includePath\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_update_include_path_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"includePath\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_update_include_path_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"includePath\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_update_compile_commands_or_include_path_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"includePath\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_update_compile_commands_or_include_path_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"includePath\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		"could_not_parse_compile_commands",
+		"could_not_parse_compile_commands",
+		"could_not_find_compile_commands",
+		"could_not_find_compile_commands",
+		"file_not_found_in_path",
+		"file_not_found_in_path",
+		"database_reset",
+		"send_response_failed",
+		"send_response_failed",
+		"read_response_failed",
+		"read_response_failed",
+		"send_request_failed",
+		"send_request_failed",
+		"request_wait_error",
+		"request_wait_error",
+		"errored_with",
+		"errored_with",
+		"file_open_failed",
+		"file_open_failed",
+		"default_query_failed",
+		"default_query_failed",
+		"failed_call",
+		"failed_call",
+		"quick_info_failed",
+		"quick_info_failed",
+		"create_intellisense_client_failed",
+		"create_intellisense_client_failed",
+		"intellisense_spawn_failed",
+		"intellisense_spawn_failed",
+		"browse_engine_update_thread_join_failed",
+		"browse_engine_update_thread_join_failed",
+		"already_open_different_casing",
+		"already_open_different_casing",
+		"intellisense_client_disconnected",
+		"intellisense_client_disconnected",
+		"formatting_failed",
+		"database_add_file_failed",
+		"database_add_file_failed",
+		"reset_timestamp_failed",
+		"reset_timestamp_failed",
+		"update_timestamp_failed",
+		"update_timestamp_failed",
+		"finalize_updates_failed",
+		"finalize_updates_failed",
+		"not_directory_with_mode",
+		"not_directory_with_mode",
+		"retrieve_fs_info_failed",
+		"retrieve_fs_info_failed",
+		"not_directory",
+		"not_directory",
+		"file_discovery_aborted",
+		"aborting_tag_parse",
+		"aborting_tag_parse",
+		"aborting_tag_parse_at_root",
+		"unable_to_retrieve_to_reset_timestamps",
+		"unable_to_retrieve_to_reset_timestamps",
+		"failed_to_reset_timestamps_for",
+		"failed_to_reset_timestamps_for",
+		"no_suitable_compiler",
+		"compiler_include_not_found",
+		"compiler_include_not_found",
+		"intellisense_not_responding",
+		"tag_parser_will_be_used",
+		"tag_parser_will_be_used",
+		"error_squiggles_disabled_in",
+		"error_squiggles_disabled_in",
+		"processing_folder_nonrecursive",
+		"processing_folder_nonrecursive",
+		"processing_folder_recursive",
+		"processing_folder_recursive",
+		"file_exclude",
+		"file_exclude",
+		"search_exclude",
+		"search_exclude",
+		"discovery_files_processed",
+		"discovery_files_processed",
+		"files_removed_from_database",
+		"files_removed_from_database",
+		"parsing_files_processed",
+		"parsing_files_processed",
+		"shutting_down_intellisense",
+		"shutting_down_intellisense",
+		"resetting_intellisense",
+		"resetting_intellisense",
+		"code_browsing_initialized",
+		"folder_will_be_indexed",
+		"folder_will_be_indexed",
+		"populate_include_completion_cache",
+		"discovering_files",
+		"done_discovering_files",
+		"parsing_open_files_elipsis",
+		"done_parsing_open_files",
+		"parsing_remaining_files",
+		"done_parsing_remaining_files",
+		"using_configuration",
+		"using_configuration",
+		"include_path_suggestions_discovered",
+		"include_path_suggestions_discovered",
+		"checking_for_syntax_errors",
+		"checking_for_syntax_errors",
+		"intellisense_engine_is",
+		"intellisense_engine_is",
+		"will_use_tag_parser_when_includes_dont_resolve",
+		"autocomplete_is_enabled",
+		"autocomplete_is_disabled",
+		"hover_is_enabled",
+		"hover_is_disabled",
+		"enhanced_colorization_is_enabled",
+		"error_squiggles_disabled",
+		"error_squiggles_enabled",
+		"error_squiggles_enabled_if_all_headers_resolve",
+		"replaced_placeholder_file_record",
+		"tag_parsing_file",
+		"tag_parsing_file",
+		"tag_parsing_error",
+		"reset_timestamp_for",
+		"reset_timestamp_for",
+		"remove_file_failed",
+		"remove_file_failed",
+		"regex_parse_error",
+		"regex_parse_error",
+		"terminating_child_process",
+		"terminating_child_process",
+		"still_alive_killing",
+		"giving_up",
+		"not_exited_yet",
+		"not_exited_yet",
+		"failed_to_spawn_process",
+		"failed_to_spawn_process",
+		"offering_completion",
+		"compiler_on_machine",
+		"compiler_on_machine",
+		"unable_to_resolve_include_path",
+		"unable_to_resolve_include_path",
+		"error_searching_for_intellisense_client",
+		"error_searching_for_intellisense_client",
+		"intellisense_client_not_available_quick_info",
+		"tag_parser_quick_info",
+		"closing_communication_channel",
+		"sending_compilation_args",
+		"sending_compilation_args",
+		"include_label",
+		"include_label",
+		"framework_label",
+		"framework_label",
+		"define_label",
+		"define_label",
+		"preinclude_label",
+		"preinclude_label",
+		"other_label",
+		"other_label",
+		"sending_count_changes_to_server",
+		"sending_count_changes_to_server",
+		"invalid_open_file_instance",
+		"invalid_open_file_instance",
+		"idle_loop_reparsing_active_document",
+		"intellisense_client_currently_disconnected",
+		"request_cancelled",
+		"request_cancelled",
+		"intellisense_client_not_available_go_to_definition",
+		"error_squiggle_count",
+		"error_squiggle_count",
+		"queueing_update_intellisense",
+		"queueing_update_intellisense",
+		"formatting_document",
+		"formatting_document",
+		"formatting_input_label",
+		"formatting_raw_output_label",
+		"formatting_diff_before_cursor",
+		"formatting_diff_after_cursor",
+		"formatting_diff",
+		"disable_inactive_regions",
+		"error_limit_exceeded",
+		"error_limit_exceeded",
+		{
+			"key": "include_errors_update_compile_commands_or_include_path_squiggles_disabled2",
+			"comment": [
+				"{Locked=\\\"#include\\\"} {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"includePath\\\"}"
+			]
+		},
+		"cannot_reset_database",
+		"cannot_reset_database",
+		"formatting_failed_see_output",
+		"populating_include_completion_cache",
+		"discovering_files_count",
+		"discovering_files_count",
+		"parsing_open_files",
+		"tag_parser_initializing",
+		"parsing_paused",
+		"parsing_files",
+		"parsing_files",
+		"discovering_files_count_progress",
+		"discovering_files_count_progress",
+		"parsing_files_progress",
+		"parsing_files_progress",
+		"cant_find_or_run_process",
+		"child_exec_failed",
+		"child_exec_failed",
+		"could_not_communicate_with_child_process",
+		"arg_failed",
+		"arg_failed",
+		"failed_to_set_flag",
+		"failed_to_set_flag",
+		"unable_to_create",
+		"unable_to_create",
+		"failed_to_set_stdout_flag",
+		"failed_to_set_stdout_flag",
+		"failed_to_set_stdin_flag",
+		"failed_to_set_stdin_flag",
+		"failed_to_set_stderr_flag",
+		"failed_to_set_stderr_flag",
+		"unable_to_start_child_process",
+		"timed_out_attempting_to_communicate_with_process",
+		"process_failed_to_run",
+		"compiler_in_compilerpath_not_found",
+		"compiler_in_compilerpath_not_found",
+		"config_data_invalid",
+		"config_data_invalid",
+		"cmake_executable_not_found",
+		"cmake_executable_not_found",
+		"no_args_provider",
+		"invalid_file_path",
+		"invalid_file_path",
+		"cant_create_intellisense_client_for",
+		"cant_create_intellisense_client_for",
+		"suffix_declaration",
+		"suffix_type_alias",
+		"fallback_to_32_bit_mode",
+		"fallback_to_64_bit_mode",
+		"fallback_to_32_bit_mode2",
+		"fallback_to_64_bit_mode2",
+		"fallback_to_no_bitness",
+		"intellisense_client_creation_aborted",
+		"intellisense_client_creation_aborted",
+		{
+			"key": "include_errors_config_provider_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"configurationProvider\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_config_provider_intellisense_disabled",
+			"comment": [
+				"{0} is the translation unit. {Locked=\\\"#include\\\"} {Locked=\\\"configurationProvider\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "include_errors_config_provider_squiggles_disabled2",
+			"comment": [
+				"{Locked=\\\"#include\\\"} {Locked=\\\"configurationProvider\\\"}"
+			]
+		},
+		{
+			"key": "preprocessor_keyword",
+			"comment": [
+				"Refers to C/C++ processor keywords"
+			]
+		},
+		"c_keyword",
+		"cpp_keyword",
+		{
+			"key": "overload",
+			"comment": [
+				"Refers to 'overloaded' function in C++. This is part of a description indicating there is 1 additional overload of a specified function."
+			]
+		},
+		{
+			"key": "overloads",
+			"comment": [
+				"Refers to 'overloaded' functions in C++. This is part of a description indicating there are N additional overloads of a specified function.  %d is replaced with that number."
+			]
+		},
+		{
+			"key": "specialization",
+			"comment": [
+				"Refers to a C++ template specialization. This is part of a description indicating there is 1 additional specialization of a function."
+			]
+		},
+		{
+			"key": "specializations",
+			"comment": [
+				"Refers to C++ template specializations. This is part of a description indicating there are N additional specializations of a function.  %d is replaced with that number."
+			]
+		},
+		"intellisense_configuration",
+		"select_intellisense_configuration",
+		"expands_to",
+		"attention_label",
+		"author_label",
+		"authors_label",
+		"bug_label",
+		"copyright_label",
+		"deprecated_label",
+		"date_label",
+		"details_label",
+		{
+			"key": "exceptions_label",
+			"comment": [
+				"This label is for describing the exceptions thrown by a function. Usage example: Exception: std::out_of_range parameter is out of range."
+			]
+		},
+		"invariant_label",
+		"file_label",
+		"note_label",
+		"parameters_label",
+		"pre_label",
+		"post_label",
+		"remark_label",
+		"remarks_label",
+		"result_label",
+		"return_label",
+		{
+			"key": "returns_label",
+			"comment": [
+				"This label is for the return value description for a function. Usage example: 'Returns: Area of a shape.'"
+			]
+		},
+		"sa_label",
+		"since_label",
+		"template_parameters_label",
+		"test_label",
+		"todo_label",
+		"version_label",
+		"warning_label",
+		"compiler_query_command_line",
+		"compiler_query_command_line",
+		"c_compiler_from_compiler_path",
+		"c_compiler_from_compiler_path",
+		"cpp_compiler_from_compiler_path",
+		"cpp_compiler_from_compiler_path",
+		"c_compiler_from_compile_commands",
+		"c_compiler_from_compile_commands",
+		"cpp_compiler_from_compile_commands",
+		"cpp_compiler_from_compile_commands",
+		"c_intellisense_mode_changed",
+		"c_intellisense_mode_changed",
+		"cpp_intellisense_mode_changed",
+		"cpp_intellisense_mode_changed",
+		"c_std_version_changed",
+		"c_std_version_changed",
+		"cpp_std_version_changed",
+		"cpp_std_version_changed",
+		"c_intellisense_mode_and_std_version_changed",
+		"c_intellisense_mode_and_std_version_changed",
+		"cpp_intellisense_mode_and_std_version_changed",
+		"cpp_intellisense_mode_and_std_version_changed",
+		"c_intellisense_mode_changed_with_path",
+		"c_intellisense_mode_changed_with_path",
+		"cpp_intellisense_mode_changed_with_path",
+		"cpp_intellisense_mode_changed_with_path",
+		"c_std_version_changed_with_path",
+		"c_std_version_changed_with_path",
+		"cpp_std_version_changed_with_path",
+		"cpp_std_version_changed_with_path",
+		"c_intellisense_mode_and_std_version_changed_with_path",
+		"c_intellisense_mode_and_std_version_changed_with_path",
+		"cpp_intellisense_mode_and_std_version_changed_with_path",
+		"cpp_intellisense_mode_and_std_version_changed_with_path",
+		"compiler_path_changed",
+		"compiler_path_changed",
+		"compiler_path_invalid",
+		"compiler_path_invalid",
+		"compiler_path_empty",
+		"msvc_intellisense_specified",
+		"unable_to_configure_cl_exe",
+		"querying_compiler_default_target",
+		"querying_compiler_default_target",
+		"compiler_default_target",
+		"compiler_default_target",
+		"c_querying_compiler_default_standard",
+		"c_querying_compiler_default_standard",
+		"cpp_querying_compiler_default_standard",
+		"cpp_querying_compiler_default_standard",
+		"detected_language_standard_version",
+		"detected_language_standard_version",
+		"unhandled_default_target_detected",
+		"unhandled_default_target_detected",
+		"unhandled_target_arg_detected",
+		"unhandled_target_arg_detected",
+		"memory_limit_shutting_down_intellisense",
+		"memory_limit_shutting_down_intellisense",
+		"failed_to_query_for_standard_version",
+		"failed_to_query_for_standard_version",
+		"unrecognized_language_standard_version",
+		"intellisense_process_crash_detected",
+		{
+			"key": "intellisense_feature_crash_detected",
+			"comment": [
+				"`{0}` will be substituted with `<feature name>`."
+			]
+		},
+		{
+			"key": "intellisense_feature_crash_detected",
+			"comment": [
+				"`{0}` will be substituted with `<feature name>`."
+			]
+		},
+		{
+			"key": "return_values_label",
+			"comment": [
+				"This label is for the return values description for a function. Usage example: 'Return values: 1 if key is found. 2 if input can't be read. 3 if input is empty.'"
+			]
+		},
+		"nvcc_compiler_not_found",
+		"nvcc_compiler_not_found",
+		"nvcc_host_compiler_not_found",
+		"nvcc_host_compiler_not_found",
+		"invoking_nvcc",
+		"invoking_nvcc",
+		"nvcc_host_compile_command_not_found",
+		"unable_to_locate_forced_include",
+		"unable_to_locate_forced_include",
+		{
+			"key": "inline_macro",
+			"comment": [
+				"'Inline' is a command and not an adjective, i.e. like 'Expand macro'."
+			]
+		},
+		"unable_to_access_browse_database",
+		"unable_to_access_browse_database",
+		"default_compiler_path_modified_explicit_intellisense_mode",
+		"remove_all_code_analysis_problems",
+		"multiple_locations_note",
+		"folder_tag",
+		"file_tag",
+		"compiler_default_language_standard_version_old",
+		"compiler_default_language_standard_version_old",
+		"unexpected_output_from_clang_tidy",
+		"unexpected_output_from_clang_tidy",
+		"generate_doxygen_comment",
+		{
+			"key": "offer_create_declaration",
+			"comment": [
+				"{0} is the name of a C/C++ function, {1} is a file name."
+			]
+		},
+		{
+			"key": "offer_create_declaration",
+			"comment": [
+				"{0} is the name of a C/C++ function, {1} is a file name."
+			]
+		},
+		{
+			"key": "offer_create_definition",
+			"comment": [
+				"{0} is the name of a C/C++ function, {1} is a file name."
+			]
+		},
+		{
+			"key": "offer_create_definition",
+			"comment": [
+				"{0} is the name of a C/C++ function, {1} is a file name."
+			]
+		},
+		{
+			"key": "function_definition_not_found",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "function_definition_not_found",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "cm_attributes",
+			"comment": [
+				"'Attributes' is a C++ specifier."
+			]
+		},
+		{
+			"key": "cm_bases",
+			"comment": [
+				"'Bases' are a C++ class type."
+			]
+		},
+		"cm_classes",
+		"cm_coclasses",
+		"cm_delegates",
+		"cm_enums",
+		"cm_events",
+		"cm_functions",
+		"cm_importdirectives",
+		"cm_importlibstatements",
+		"cm_importstatements",
+		"cm_includedirectives",
+		"cm_interfaces",
+		"cm_libraries",
+		"cm_macros",
+		"cm_maps",
+		"cm_mapentries",
+		"cm_miscellaneous",
+		"cm_namespaces",
+		"cm_parameters",
+		"cm_properties",
+		"cm_structs",
+		"cm_todo_insert_return",
+		"cm_typedefs",
+		"cm_unions",
+		"cm_usingaliases",
+		"cm_usingdirectives",
+		"cm_variables",
+		"cm_addfunction",
+		{
+			"key": "e_com_virtual_redundant",
+			"comment": [
+				"Do not localize 'vsCMFunctionVirtual' and 'vsCMFunctionComMethod', they are code implementation."
+			]
+		},
+		{
+			"key": "e_static_com_method",
+			"comment": [
+				"Do not localize 'vsCMFunctionComMethod', it is code implementation."
+			]
+		},
+		{
+			"key": "e_invalid_ftype",
+			"comment": [
+				"%s is the invalid file."
+			]
+		},
+		{
+			"key": "e_fname_to_long",
+			"comment": [
+				"%s is the file that has a long name."
+			]
+		},
+		{
+			"key": "e_create_file",
+			"comment": [
+				"%s is the file that could not be created."
+			]
+		},
+		{
+			"key": "e_access_file",
+			"comment": [
+				"%s is the directory or file that could not be accessed for writing."
+			]
+		},
+		{
+			"key": "e_invalid_pathname",
+			"comment": [
+				"%s is the file that has an invalid path."
+			]
+		},
+		{
+			"key": "e_cm_file_not_in_project",
+			"comment": [
+				"%s is the file that was not found."
+			]
+		},
+		{
+			"key": "refactor_create_declaration_definition_failed",
+			"comment": [
+				"The operation 'Create Declaration / Definition' on a function was not successful. %s is the error info that has a period at the end of the string."
+			]
+		},
+		{
+			"key": "refactor_create_default_delete",
+			"comment": [
+				"%s is the function that could not be created."
+			]
+		},
+		{
+			"key": "refactor_function_not_created",
+			"comment": [
+				"%s is the function that could not be created."
+			]
+		},
+		{
+			"key": "refactor_ambiguous_locations",
+			"comment": [
+				"%s is the function for the unambiguous location."
+			]
+		},
+		{
+			"key": "refactor_file_not_in_project",
+			"comment": [
+				"%s is the file that was not found."
+			]
+		},
+		{
+			"key": "refactor_not_class_namespace",
+			"comment": [
+				"%s is the class or namespace code that could not be found."
+			]
+		},
+		{
+			"key": "refactor_operation_unsupported",
+			"comment": [
+				"%s is the function that is not supported for an operation that involves automatically generating code."
+			]
+		},
+		"unknown_error",
+		"run_select_intellisense_configuration",
+		{
+			"key": "offer_copy_declaration",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "offer_copy_declaration",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "offer_copy_definition",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "offer_copy_definition",
+			"comment": [
+				"{0} is the name of a C/C++ function."
+			]
+		},
+		{
+			"key": "refactor_copy_declaration_definition_failed",
+			"comment": [
+				"The operation 'Copy Declaration / Definition' on a function was not successful. %s is the error info that has a period at the end of the string."
+			]
+		},
+		"refactor_extract_to_function",
+		"refactor_extract_to_free_function",
+		{
+			"key": "refactor_extract_to_member_function_in",
+			"comment": [
+				"{0} is the name of the struct or class the member function belongs to, e.g. 'class Foo'."
+			]
+		},
+		{
+			"key": "refactor_extract_to_member_function_in",
+			"comment": [
+				"{0} is the name of the struct or class the member function belongs to, e.g. 'class Foo'."
+			]
+		},
+		"refactor_extract_outsidefunc",
+		"refactor_extract_multifunc",
+		"refactor_extract_variable",
+		"refactor_extract_macro",
+		"refactor_extract_inactive",
+		"refactor_extract_no_il",
+		"refactor_extract_entirefunc",
+		"refactor_extract_errors_selection",
+		{
+			"key": "refactor_extract_reference_c_code",
+			"comment": [
+				"%s is the name of a variable."
+			]
+		},
+		"refactor_extract_reference_return_c_code",
+		"refactor_extract_xborder_jump",
+		"refactor_extract_missing_return",
+		"expand_selection",
+		"file_not_found_in_path2",
+		"file_not_found_in_path2",
+		"copilot_hover_link",
+		"browse_path_not_found",
+		"browse_path_not_found",
+		{
+			"key": "license_terms",
+			"comment": [
+				"{Locked=\\\"C/C++\\\"} {Locked=\\\"Visual Studio\\\"} {Locked=\\\"Mac\\\"} {Locked=\\\"Visual Studio Code\\\"} {Locked=\\\"Azure DevOps\\\"} {Locked=\\\"Team Foundation Server\\\"}"
+			]
+		},
+		{
+			"key": "help_title",
+			"comment": [
+				"{Locked=\\\"Microsoft\\\"} {Locked=\\\"C++\\\"}"
+			]
+		},
+		{
+			"key": "help_usage",
+			"comment": [
+				"{0} is the executable name. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "help_usage",
+			"comment": [
+				"{0} is the executable name. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		"help_options_header",
+		"help_help",
+		"help_version",
+		{
+			"key": "help_accept_eula",
+			"comment": [
+				"{Locked=\\\"EULA\\\"}"
+			]
+		},
+		{
+			"key": "help_stderr",
+			"comment": [
+				"{Locked=\\\"stderr\\\"} {Locked=\\\"/dev/null\\\"}"
+			]
+		},
+		{
+			"key": "help_login",
+			"comment": [
+				"{Locked=\\\"GitHub Copilot\\\"}"
+			]
+		},
+		"help_force_login",
+		"help_allow_plaintext",
+		"help_log_dir",
+		"help_log_level",
+		{
+			"key": "help_lsp_config",
+			"comment": [
+				"{Locked=\\\".github\\\"}"
+			]
+		},
+		"help_disable_telemetry",
+		{
+			"key": "auth_device_flow_prompt",
+			"comment": [
+				"{0} is the user code to enter. {1} is the verification URL to visit. {Locked=\\\"GitHub\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "auth_device_flow_prompt",
+			"comment": [
+				"{0} is the user code to enter. {1} is the verification URL to visit. {Locked=\\\"GitHub\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		"auth_timed_out",
+		{
+			"key": "auth_success",
+			"comment": [
+				"{Locked=\\\"GitHub\\\"}"
+			]
+		},
+		{
+			"key": "auth_save_failed",
+			"comment": [
+				"{Locked=\\\"GitHub\\\"}"
+			]
+		},
+		{
+			"key": "auth_keyring_error",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "auth_keyring_error",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "auth_keyring_locked",
+			"comment": [
+				"{Locked=\\\"gnome-keyring-daemon\\\"}"
+			]
+		},
+		{
+			"key": "auth_keyring_unavailable",
+			"comment": [
+				"{Locked=\\\"gnome-keyring\\\"} {Locked=\\\"sudo apt install gnome-keyring\\\"}"
+			]
+		},
+		{
+			"key": "auth_try_plaintext",
+			"comment": [
+				"{Locked=\\\"--login\\\"} {Locked=\\\"--allow-plaintext-secret-storage\\\"}"
+			]
+		},
+		"auth_expired",
+		"auth_denied",
+		{
+			"key": "auth_unexpected_error",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "auth_unexpected_error",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "auth_login_failed",
+			"comment": [
+				"{Locked=\\\"GitHub\\\"} {Locked=\\\"--login\\\"}"
+			]
+		},
+		{
+			"key": "auth_login_failed_plugin",
+			"comment": [
+				"{Locked=\\\"GitHub\\\"} {Locked=\\\"npx @microsoft/cpp-language-server --login\\\"}"
+			]
+		},
+		{
+			"key": "auth_eula_required",
+			"comment": [
+				"{Locked=\\\"EULA\\\"} {Locked=\\\"--accept-eula\\\"}"
+			]
+		},
+		{
+			"key": "auth_eula_required_plugin",
+			"comment": [
+				"{Locked=\\\"EULA\\\"} {Locked=\\\"npx @microsoft/cpp-language-server --accept-eula\\\"}"
+			]
+		},
+		{
+			"key": "auth_already_authenticated",
+			"comment": [
+				"{Locked=\\\"GitHub\\\"} {Locked=\\\"--force-login\\\"}"
+			]
+		},
+		"config_unsupported_version",
+		{
+			"key": "config_file_not_found",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_file_not_found",
+			"comment": [
+				"{Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_parse_failed",
+			"comment": [
+				"{Locked=\\\"JSON\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "config_parse_failed",
+			"comment": [
+				"{Locked=\\\"JSON\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "config_repo_path_invalid",
+			"comment": [
+				"{Locked=\\\"repositoryPath\\\"}"
+			]
+		},
+		{
+			"key": "config_missing_source",
+			"comment": [
+				"{Locked=\\\"compileCommands\\\"} {Locked=\\\"cppProperties\\\"}"
+			]
+		},
+		{
+			"key": "config_dual_source",
+			"comment": [
+				"{Locked=\\\"compileCommands\\\"} {Locked=\\\"cppProperties\\\"}"
+			]
+		},
+		{
+			"key": "config_compile_commands_not_found",
+			"comment": [
+				"{Locked=\\\"compileCommands\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_compile_commands_not_found",
+			"comment": [
+				"{Locked=\\\"compileCommands\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_not_found",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_not_found",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_parse_failed",
+			"comment": [
+				"{Locked=\\\"JSON\\\"} {Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_parse_failed",
+			"comment": [
+				"{Locked=\\\"JSON\\\"} {Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_schema_invalid",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_cpp_properties_schema_invalid",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_no_configurations",
+			"comment": [
+				"{Locked=\\\"configurations\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_no_configurations",
+			"comment": [
+				"{Locked=\\\"configurations\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "config_configuration_not_found",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "config_configuration_not_found",
+			"comment": [
+				"{Locked=\\\"cppProperties\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		"config_paths_cache_missing",
+		{
+			"key": "curl_not_found",
+			"comment": [
+				"{Locked=\\\"libcurl\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "curl_not_found",
+			"comment": [
+				"{Locked=\\\"libcurl\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "curl_install_macos",
+			"comment": [
+				"{Locked=\\\"libcurl\\\"} {Locked=\\\"macOS\\\"} {Locked=\\\"brew install curl\\\"}"
+			]
+		},
+		{
+			"key": "curl_install_linux",
+			"comment": [
+				"{Locked=\\\"libcurl\\\"} {Locked=\\\"sudo apt install libcurl4\\\"} {Locked=\\\"sudo dnf install libcurl\\\"} {Locked=\\\"Debian\\\"} {Locked=\\\"Ubuntu\\\"} {Locked=\\\"Fedora\\\"} {Locked=\\\"RHEL\\\"}"
+			]
+		},
+		{
+			"key": "curl_symbols_missing",
+			"comment": [
+				"{Locked=\\\"libcurl\\\"}"
+			]
+		},
+		{
+			"key": "keytar_not_found",
+			"comment": [
+				"{Locked=\\\"libsecret-1.so.0\\\"} {Locked=\\\"libsecret\\\"} {Locked=\\\"sudo apt install libsecret-1-0\\\"} {Locked=\\\"sudo dnf install libsecret\\\"} {Locked=\\\"Debian\\\"} {Locked=\\\"Ubuntu\\\"} {Locked=\\\"Fedora\\\"} {Locked=\\\"RHEL\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "keytar_not_found",
+			"comment": [
+				"{Locked=\\\"libsecret-1.so.0\\\"} {Locked=\\\"libsecret\\\"} {Locked=\\\"sudo apt install libsecret-1-0\\\"} {Locked=\\\"sudo dnf install libsecret\\\"} {Locked=\\\"Debian\\\"} {Locked=\\\"Ubuntu\\\"} {Locked=\\\"Fedora\\\"} {Locked=\\\"RHEL\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "keytar_symbols_missing",
+			"comment": [
+				"{Locked=\\\"libsecret\\\"}"
+			]
+		},
+		"telemetry_disable_failed",
+		{
+			"key": "lsp_method_not_found",
+			"comment": [
+				"{0} is the LSP method name. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "lsp_method_not_found",
+			"comment": [
+				"{0} is the LSP method name. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "intellisense_same_canonical_path",
+			"comment": [
+				"{Locked=\\\"IntelliSense\\\"} {Locked=\\\"URI\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "intellisense_same_canonical_path",
+			"comment": [
+				"{Locked=\\\"IntelliSense\\\"} {Locked=\\\"URI\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		"status_initializing",
+		"status_initializing_with_n_of_m",
+		"status_initializing_with_n_of_m",
+		"status_initializing_with_n_of_m_and_text",
+		"status_initializing_with_n_of_m_and_text",
+		"status_initializing_with_text",
+		"status_initializing_with_text",
+		"status_initializing_projects",
+		"status_initializing_projects_with_n_of_m",
+		"status_initializing_projects_with_n_of_m",
+		"status_initializing_projects_with_n_of_m_and_text",
+		"status_initializing_projects_with_n_of_m_and_text",
+		"status_initializing_projects_with_text",
+		"status_initializing_projects_with_text",
+		"status_checking_for_outdated_files",
+		"status_checking_for_outdated_files_with_n_of_m",
+		"status_checking_for_outdated_files_with_n_of_m",
+		"status_checking_for_outdated_files_with_n_of_m_and_text",
+		"status_checking_for_outdated_files_with_n_of_m_and_text",
+		"status_checking_for_outdated_files_with_text",
+		"status_checking_for_outdated_files_with_text",
+		"status_parsing_files",
+		"status_parsing_files_with_n_of_m",
+		"status_parsing_files_with_n_of_m",
+		"status_parsing_files_with_n_of_m_and_text",
+		"status_parsing_files_with_n_of_m_and_text",
+		"status_parsing_files_with_text",
+		"status_parsing_files_with_text",
+		"status_parsing_includes",
+		"status_parsing_includes_with_n_of_m",
+		"status_parsing_includes_with_n_of_m",
+		"status_parsing_includes_with_n_of_m_and_text",
+		"status_parsing_includes_with_n_of_m_and_text",
+		"status_parsing_includes_with_text",
+		"status_parsing_includes_with_text",
+		"status_scanning_includes",
+		"status_scanning_includes_with_n_of_m",
+		"status_scanning_includes_with_n_of_m",
+		"status_scanning_includes_with_n_of_m_and_text",
+		"status_scanning_includes_with_n_of_m_and_text",
+		"status_scanning_includes_with_text",
+		"status_scanning_includes_with_text",
+		"status_updating_external_dependencies",
+		"status_updating_external_dependencies_with_n_of_m",
+		"status_updating_external_dependencies_with_n_of_m",
+		"status_updating_external_dependencies_with_n_of_m_and_text",
+		"status_updating_external_dependencies_with_n_of_m_and_text",
+		"status_updating_external_dependencies_with_text",
+		"status_updating_external_dependencies_with_text",
+		"status_optimizing_database",
+		"status_optimizing_database_with_n_of_m",
+		"status_optimizing_database_with_n_of_m",
+		"status_optimizing_database_with_n_of_m_and_text",
+		"status_optimizing_database_with_n_of_m_and_text",
+		"status_optimizing_database_with_text",
+		"status_optimizing_database_with_text",
+		"status_creating_indexes",
+		"status_creating_indexes_with_n_of_m",
+		"status_creating_indexes_with_n_of_m",
+		"status_creating_indexes_with_n_of_m_and_text",
+		"status_creating_indexes_with_n_of_m_and_text",
+		"status_creating_indexes_with_text",
+		"status_creating_indexes_with_text",
+		"status_evaluating_file",
+		"status_evaluating_file_with_n_of_m",
+		"status_evaluating_file_with_n_of_m",
+		"status_evaluating_file_with_n_of_m_and_text",
+		"status_evaluating_file_with_n_of_m_and_text",
+		"status_evaluating_file_with_text",
+		"status_evaluating_file_with_text",
+		"status_indexing_files",
+		"status_indexing_files_with_n_of_m",
+		"status_indexing_files_with_n_of_m",
+		"status_indexing_files_with_n_of_m_and_text",
+		"status_indexing_files_with_n_of_m_and_text",
+		"status_indexing_files_with_text",
+		"status_indexing_files_with_text",
+		"help_allow_missing_lsp_config",
+		"initialize_failed_during_engine_setup",
+		"important_label",
+		{
+			"key": "help_check",
+			"comment": [
+				"{Locked=\\\"compile_commands.json\\\"}"
+			]
+		},
+		{
+			"key": "help_check_compile_commands",
+			"comment": [
+				"{Locked=\\\"compile_commands.json\\\"} {Locked=\\\"--check\\\"}"
+			]
+		},
+		{
+			"key": "check_not_authorized",
+			"comment": [
+				"{Locked=\\\"--check\\\"}"
+			]
+		},
+		{
+			"key": "check_requires_source",
+			"comment": [
+				"<file> is a placeholder for the source file path and should be translated. {Locked=\\\"--check\\\"} {Locked=\\\"--check=\\\"}"
+			]
+		},
+		{
+			"key": "check_source_not_found",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_source_not_found",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_compile_commands_not_found",
+			"comment": [
+				"{0} is the file path. {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_compile_commands_not_found",
+			"comment": [
+				"{0} is the file path. {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_compile_commands_not_discovered",
+			"comment": [
+				"{0} is the starting directory path. <path> is a placeholder for the compile_commands.json path and should be translated. {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"--check-compile-commands=\\\"}"
+			]
+		},
+		{
+			"key": "check_compile_commands_not_discovered",
+			"comment": [
+				"{0} is the starting directory path. <path> is a placeholder for the compile_commands.json path and should be translated. {Locked=\\\"compile_commands.json\\\"} {Locked=\\\"{0}\\\"} {Locked=\\\"--check-compile-commands=\\\"}"
+			]
+		},
+		"check_engine_init_failed",
+		{
+			"key": "check_no_workspace_folder",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_no_workspace_folder",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_not_in_compile_commands",
+			"comment": [
+				"{0} is the source file path. {1} is the compile_commands.json path. {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "check_not_in_compile_commands",
+			"comment": [
+				"{0} is the source file path. {1} is the compile_commands.json path. {Locked=\\\"{0}\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "check_read_failed",
+			"comment": [
+				"{0} is the file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_read_failed",
+			"comment": [
+				"{0} is the file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_open_failed",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_open_failed",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_timed_out",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "check_timed_out",
+			"comment": [
+				"{0} is the source file path. {Locked=\\\"{0}\\\"}"
+			]
+		},
+		{
+			"key": "failed_to_open_browse_db_lock_file",
+			"comment": [
+				"{0} is the lock file path. {1} is the errno value. {Locked=\\\"{0}\\\"} {Locked=\\\"errno\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "failed_to_open_browse_db_lock_file",
+			"comment": [
+				"{0} is the lock file path. {1} is the errno value. {Locked=\\\"{0}\\\"} {Locked=\\\"errno\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "failed_to_lock_browse_db_lock_file",
+			"comment": [
+				"{0} is the lock file path. {1} is the errno value. {Locked=\\\"{0}\\\"} {Locked=\\\"errno\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		},
+		{
+			"key": "failed_to_lock_browse_db_lock_file",
+			"comment": [
+				"{0} is the lock file path. {1} is the errno value. {Locked=\\\"{0}\\\"} {Locked=\\\"errno\\\"} {Locked=\\\"{1}\\\"}"
+			]
+		}
+	],
+	"filePath": "nativeStrings"
+}

@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Invalid {0} regular expression: {1}"
+	],
+	"keys": [
+		"invalid.processFilter.regex"
+	],
+	"filePath": "Debugger\\processFilter"
+}

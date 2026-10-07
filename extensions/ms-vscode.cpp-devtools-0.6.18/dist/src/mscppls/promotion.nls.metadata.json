@@ -1,0 +1,25 @@
+{
+	"messages": [
+		"Install",
+		"Learn more",
+		"Don't ask again",
+		"C++ language services are also available for Agency GitHub Copilot CLI. Install now?",
+		"Next steps",
+		"Microsoft C++ Language Server installed. The first time you use it in a project it will help you create a compile_commands.json; if it doesn't, you can create one yourself.",
+		"Show details",
+		"Next steps",
+		"Microsoft C++ Language Server for Agency Copilot failed to install. Make sure your Agency EMU account is signed in."
+	],
+	"keys": [
+		"mscppls.promotion.install",
+		"mscppls.promotion.learnMore",
+		"mscppls.promotion.dontAskAgain",
+		"mscppls.promotion.message",
+		"mscppls.promotion.nextSteps",
+		"mscppls.promotion.installed",
+		"mscppls.promotion.showDetails",
+		"mscppls.promotion.nextSteps",
+		"mscppls.promotion.installFailed"
+	],
+	"filePath": "src\\mscppls\\promotion"
+}
