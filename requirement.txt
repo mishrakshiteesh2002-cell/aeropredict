@@ -1,4 +1,4 @@
-streamlist
+streamlit
 plotly
 pandas
 numpy
