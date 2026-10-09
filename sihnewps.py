@@ -18,7 +18,31 @@ except Exception:
     HAS_XGB = False
 
 st.set_page_config(page_title="AeroPredict", page_icon="✈️", layout="wide")
-
+# Custom CSS for modern card styling and layout polish
+st.markdown("""
+    <style>
+    .metric-card {
+        background-color: #1e2530;
+        border: 1px solid #2d3748;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 12px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background-color: #1a202c;
+        border-radius: 6px;
+        padding: 10px 20px;
+        color: #e2e8f0;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #2b6cb0 !important;
+        color: white !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 # ----------------------------------------------------------------- settings
 SENS = {  # sensor id -> friendly name (NASA C-MAPSS FD001 informative sensors)
     "s2": "LPC outlet temp", "s3": "HPC outlet temp", "s4": "LPT outlet temp",
@@ -170,7 +194,7 @@ m3.metric("🟠 Watch", int(n.get("AMBER", 0)))
 m4.metric("🔴 Needs repair", int(n.get("RED", 0)))
 m5.metric("Model error (RMSE)", f"{rmse:.1f} cycles")
 
-tab1, tab2, tab3, tab4 = st.tabs(["🛩️ Fleet overview", "🔍 Aircraft detail", "📦 Alerts & spare parts", "🎛️ What-if & model"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🛩️ Fleet overview", "🔍 Aircraft detail", "📦 Alerts & spare parts", "🎛️ What-if & model", "💰Financials"])
 
 # ---- Tab 1: fleet overview
 with tab1:
@@ -259,3 +283,24 @@ with tab4:
         imp.columns = ["Feature", "Importance"]
         st.plotly_chart(px.bar(imp, x="Importance", y="Feature", orientation="h",
                                title="What the model looks at most"), use_container_width=True)
+
+        # ---- Tab 5: Financial Impact & Downtime Savings
+with tab5:
+    st.subheader("💰 Financial Impact & Downtime Savings Estimator")
+    st.write("Translating predictive maintenance into business value for fleet operations.")
+    
+    # Financial estimation inputs
+    c1, c2, c3 = st.columns(3)
+    avg_downtime_cost = c1.number_input("Cost per hour of unplanned downtime ($)", value=12000, step=1000)
+    repair_cost = c2.number_input("Scheduled maintenance cost ($)", value=35000, step=5000)
+    emergency_cost = c3.number_input("Emergency replacement cost ($)", value=95000, step=5000)
+    
+    red_count = int((fleet.Status == "RED").sum())
+    potential_savings = red_count * (emergency_cost - repair_cost)
+    
+    st.markdown("---")
+    f1, f2 = st.columns(2)
+    f1.metric("Estimated Unplanned Failures Avoided", f"{red_count} Aircraft")
+    f2.metric("Projected Cost Savings", f"${potential_savings:,.0f}", delta="Optimized Maintenance")
+    
+    st.info("💡 **Hackathon Pitch Tip:** Showing clear financial ROI alongside technical accuracy proves both the engineering viability and business impact of AeroPredict.")
