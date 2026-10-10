@@ -1,6 +1,6 @@
 """
 AeroPredict - Predictive Maintenance & Fleet Availability (SIH26249 prototype)
-Run with:  streamlit run app.py
+Run with:  streamlit run sihnewps.py
 """
 import os
 import numpy as np
@@ -8,9 +8,14 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.ensemble import IsolationForest, GradientBoostingRegressor
-from sklearn.metrics import mean_squared_error
 
+# scikit-learn and XGBoost are used when available. Some Windows PCs block their files
+# ("Application Control policy"), so the app falls back to simple NumPy models instead.
+try:
+    from sklearn.ensemble import IsolationForest, GradientBoostingRegressor
+    HAS_SKLEARN = True
+except Exception:
+    HAS_SKLEARN = False
 try:
     from xgboost import XGBRegressor
     HAS_XGB = True
@@ -18,16 +23,10 @@ except Exception:
     HAS_XGB = False
 
 st.set_page_config(page_title="AeroPredict", page_icon="✈️", layout="wide")
+
 # Custom CSS for modern card styling and layout polish
 st.markdown("""
     <style>
-    .metric-card {
-        background-color: #1e2530;
-        border: 1px solid #2d3748;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-    }
     .stTabs [data-baseweb="tab-list"] {
         gap: 12px;
     }
@@ -43,6 +42,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 # ----------------------------------------------------------------- settings
 SENS = {  # sensor id -> friendly name (NASA C-MAPSS FD001 informative sensors)
     "s2": "LPC outlet temp", "s3": "HPC outlet temp", "s4": "LPT outlet temp",
@@ -55,6 +55,7 @@ SYN = {"s2": (642, 2.5, 1), "s3": (1590, 30, 1), "s4": (1408, 40, 1), "s7": (554
 FEATS = ["cycle"] + list(SENS) + [s + "_r" for s in SENS]
 ISO_FEATS = [s + "_r" for s in SENS]
 RED_T, AMBER_T, RUL_CAP = 30, 60, 125
+FALLBACK_Z = 3.0
 FLEET_N = 15
 CYCLES_PER_DAY = 2
 PARTS = ["HPC blade set", "LPT turbine blade", "Fuel pump", "Oil pump seal", "Main bearing"]
@@ -97,18 +98,61 @@ def load_data():
     return df, source
 
 
+class KNNRegressor:
+    """Nearest-neighbour model in pure NumPy (fallback when XGBoost / scikit-learn are blocked)."""
+    def __init__(self, k=15):
+        self.k = k
+
+    def fit(self, X, y):
+        X = np.asarray(X, float)
+        self.mu, self.sd = X.mean(0), X.std(0) + 1e-9
+        self.X = (X - self.mu) / self.sd
+        self.sq = (self.X ** 2).sum(1)[None, :]
+        self.y = np.asarray(y, float)
+        return self
+
+    def predict(self, X):
+        Z = (np.asarray(X, float) - self.mu) / self.sd
+        out = []
+        for i in range(0, len(Z), 400):
+            q = Z[i:i + 400]
+            d = (q ** 2).sum(1)[:, None] + self.sq - 2 * q @ self.X.T
+            idx = np.argpartition(d, self.k, axis=1)[:, :self.k]
+            out.append(self.y[idx].mean(1))
+        return np.concatenate(out)
+
+
+class Detector:
+    """Early-warning detector: Isolation Forest if available, else a simple NumPy drift score."""
+    def __init__(self, healthy):
+        if HAS_SKLEARN:
+            self.m = IsolationForest(contamination=0.02, random_state=0).fit(healthy)
+        else:
+            h = np.asarray(healthy, float)
+            self.mu, self.sd = h.mean(0), h.std(0) + 1e-9
+            self.m = None
+
+    def flag(self, X):
+        if self.m is not None:
+            return self.m.decision_function(X) < -0.16  # stricter than default, fewer false alarms
+        z = np.abs((np.asarray(X, float) - self.mu) / self.sd)
+        return z.mean(1) > FALLBACK_Z
+
+
 @st.cache_resource
 def train_models(df):
     train, test = df[df.unit <= 80], df[df.unit > 80]
     if HAS_XGB:
-        model = XGBRegressor(n_estimators=300, max_depth=4, learning_rate=0.05, subsample=0.8, random_state=0)
+        model, name = XGBRegressor(n_estimators=300, max_depth=4, learning_rate=0.05, subsample=0.8, random_state=0), "XGBoost"
+    elif HAS_SKLEARN:
+        model, name = GradientBoostingRegressor(n_estimators=200, max_depth=3, random_state=0), "Gradient Boosting"
     else:
-        model = GradientBoostingRegressor(n_estimators=200, max_depth=3, random_state=0)
+        model, name = KNNRegressor(k=15), "Nearest-neighbour (pure NumPy)"
     model.fit(train[FEATS], train["RUL"])
     pred = np.clip(model.predict(test[FEATS]), 0, RUL_CAP)
-    rmse = float(np.sqrt(mean_squared_error(test["RUL"], pred)))
-    iso = IsolationForest(contamination=0.02, random_state=0).fit(train[train.cycle <= 60][ISO_FEATS])
-    return model, iso, rmse
+    rmse = float(np.sqrt(np.mean((test["RUL"].to_numpy() - pred) ** 2)))
+    iso = Detector(train[train.cycle <= 60][ISO_FEATS])
+    return model, iso, rmse, name
 
 
 def predict_rul(model, X):
@@ -132,7 +176,7 @@ def fleet_snapshot(df, model, iso, days):
         meta.append((f"Jet-{i + 1:02d}", u, cyc))
     X = pd.DataFrame(rows).reset_index(drop=True)
     rul = predict_rul(model, X)
-    odd = iso.decision_function(X[ISO_FEATS]) < -0.16  # stricter than default, fewer false alarms
+    odd = iso.flag(X[ISO_FEATS])
     fleet = pd.DataFrame({
         "Aircraft": [m[0] for m in meta], "Engine": [m[1] for m in meta], "Cycle": [m[2] for m in meta],
         "Pred RUL": rul.round().astype(int),
@@ -169,7 +213,7 @@ def make_plan(fleet, slots, parts):
 
 # ---------------------------------------------------------------------- UI
 df, source = load_data()
-model, iso, rmse = train_models(df)
+model, iso, rmse, model_name = train_models(df)
 
 with st.sidebar:
     st.title("✈️ AeroPredict")
@@ -194,7 +238,13 @@ m3.metric("🟠 Watch", int(n.get("AMBER", 0)))
 m4.metric("🔴 Needs repair", int(n.get("RED", 0)))
 m5.metric("Model error (RMSE)", f"{rmse:.1f} cycles")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["🛩️ Fleet overview", "🔍 Aircraft detail", "📦 Alerts & spare parts", "🎛️ What-if & model", "💰Financials"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "🛩️ Fleet overview",
+    "🔍 Aircraft detail",
+    "📦 Alerts & spare parts",
+    "🎛️ What-if & model",
+    "💰 Financials",
+])
 
 # ---- Tab 1: fleet overview
 with tab1:
@@ -276,31 +326,41 @@ with tab4:
     w2.plotly_chart(px.line(a_slots, x="Workshop slots", y="Readiness %", markers=True,
                             title="Readiness vs workshop slots"), use_container_width=True)
     st.subheader("About the model")
-    st.write(f"{'XGBoost' if HAS_XGB else 'Gradient Boosting'} predicts remaining life from sensor readings. "
-             f"Isolation Forest gives the early-warning flag. Test error: **{rmse:.1f} cycles** (RMSE) on engines the model never saw.")
+    st.write(f"{model_name} predicts remaining life from sensor readings. "
+             f"{'Isolation Forest' if HAS_SKLEARN else 'A drift score'} gives the early-warning flag. "
+             f"Test error: **{rmse:.1f} cycles** (RMSE) on engines the model never saw.")
     if hasattr(model, "feature_importances_"):
         imp = pd.Series(model.feature_importances_, index=FEATS).nlargest(8).reset_index()
         imp.columns = ["Feature", "Importance"]
         st.plotly_chart(px.bar(imp, x="Importance", y="Feature", orientation="h",
                                title="What the model looks at most"), use_container_width=True)
 
-        # ---- Tab 5: Financial Impact & Downtime Savings
+# ---- Tab 5: financial impact and downtime savings
 with tab5:
     st.subheader("💰 Financial Impact & Downtime Savings Estimator")
     st.write("Translating predictive maintenance into business value for fleet operations.")
-    
-    # Financial estimation inputs
-    c1, c2, c3 = st.columns(3)
-    avg_downtime_cost = c1.number_input("Cost per hour of unplanned downtime ($)", value=12000, step=1000)
-    repair_cost = c2.number_input("Scheduled maintenance cost ($)", value=35000, step=5000)
-    emergency_cost = c3.number_input("Emergency replacement cost ($)", value=95000, step=5000)
-    
+
+    c1, c2, c3, c4 = st.columns(4)
+    downtime_cost = c1.number_input("Cost per hour of unplanned downtime ($)", value=12000, step=1000)
+    downtime_hours = c2.number_input("Downtime hours avoided per failure", value=12, step=1)
+    repair_cost = c3.number_input("Scheduled maintenance cost ($)", value=35000, step=5000)
+    emergency_cost = c4.number_input("Emergency replacement cost ($)", value=95000, step=5000)
+
     red_count = int((fleet.Status == "RED").sum())
-    potential_savings = red_count * (emergency_cost - repair_cost)
-    
+    served = min(slots, parts, red_count)          # red aircraft that really get a slot AND a part
+    waiting = red_count - served
+    per_aircraft = (emergency_cost - repair_cost) + downtime_cost * downtime_hours
+    savings = served * per_aircraft
+
     st.markdown("---")
-    f1, f2 = st.columns(2)
-    f1.metric("Estimated Unplanned Failures Avoided", f"{red_count} Aircraft")
-    f2.metric("Projected Cost Savings", f"${potential_savings:,.0f}", delta="Optimized Maintenance")
-    
-    st.info("💡 **Hackathon Pitch Tip:** Showing clear financial ROI alongside technical accuracy proves both the engineering viability and business impact of AeroPredict.")
+    f1, f2, f3 = st.columns(3)
+    f1.metric("Unplanned failures avoided", f"{served} aircraft")
+    f2.metric("Projected cost savings", f"${savings:,.0f}")
+    f3.metric("Saving per aircraft", f"${per_aircraft:,.0f}")
+    st.caption("Savings = aircraft serviced in time x (emergency cost - scheduled cost + downtime cost x hours avoided). "
+               "Illustrative: change the costs above to match your fleet.")
+    if waiting > 0:
+        st.warning(f"{waiting} red aircraft are still waiting for a workshop slot or spare part. "
+                   "Increase slots or stock in the sidebar to avoid failures.")
+    else:
+        st.success("All red aircraft are covered by a workshop slot and a spare part.")
